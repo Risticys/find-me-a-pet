@@ -1,0 +1,37 @@
+<div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+
+  <img 
+    [src]="pet.imageUrl" 
+    alt="{{ pet.name }}" 
+    class="w-full h-48 object-cover"
+  />
+
+  <div class="p-4">
+
+    <h3 class="text-xl font-semibold mb-2">
+      {{ pet.name }}
+    </h3>
+
+    <p class="text-sm text-gray-600">
+      {{ pet.type }} • {{ pet.age }} years
+    </p>
+
+    <div class="mt-2 text-sm text-gray-700 space-y-1">
+      <p><span class="font-medium">Energy:</span> {{ pet.energyLevel }}</p>
+      <p><span class="font-medium">Space:</span> {{ pet.spaceNeed }}</p>
+      <p><span class="font-medium">Care:</span> {{ pet.careLevel }}</p>
+    </div>
+
+    <div class="mt-2 text-xs text-gray-500">
+      👶 {{ pet.goodWithKids ? 'Good with kids' : 'Not for kids' }}  
+      <br>
+      🐾 {{ pet.goodWithPets ? 'Good with pets' : 'Prefers to be alone' }}
+    </div>
+
+    <p class="mt-3 text-sm text-gray-600 line-clamp-3">
+      {{ pet.description }}
+    </p>
+
+  </div>
+
+</div>
