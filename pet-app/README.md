@@ -1,100 +1,115 @@
-🐾 Find Me a Pet – Smart Pet Matching Platform
+# Find Me a Pet – Smart Pet Matching Platform
 
-## 📸 Screenshots
+## Screenshots
 
-### 🏠 Home Page
-![Home](docs/home.png)
+<p align="center">
+  <img src="docs/home.png" width="650"/>
+</p>
 
-### 📍 Pet Feed
-![Find Match](docs/find-match.png)
+### Home Page
 
-### 🐶 Pet Details
-![Forum](docs/forum.png)
+<p align="center">
+  <img src="docs/find-match.png" width="650"/>
+</p>
 
+### Pet Feed / Match Page
 
-A full-stack web application concept for connecting users with adoptable pets, featuring a smart matching system and a location-based community feed.
+<p align="center">
+  <img src="docs/forum.png" width="650"/>
+</p>
 
-This repository currently contains the frontend and full backend architecture structure, but the backend logic is not implemented yet.
+### Pet Details / Forum
 
-🚀 Project Status
+---
 
-⚠️ Important:
+## Overview
 
-Backend is only scaffolded (Clean Architecture structure)
-No business logic or API endpoints are fully implemented yet
-Frontend is functional (UI + basic integration-ready structure)
-🧩 Features (Planned)
-🏠 Browse pets for adoption (filter + search)
-🔐 JWT authentication (User/Admin roles)
-🐕 Pet management (CRUD + image upload)
-🧠 Smart pet matching system
-📍 Location-based pet feed (no followers, local only)
-💬 Likes and comments on posts
-📷 Instagram-style feed with infinite scroll
-📍 Location-Based Feed (Concept)
-No global feed
-No followers
-Users only see posts:
-From the same city OR
-Within a defined radius (e.g. 20 km)
+Full-stack pet adoption platform with smart matching and location-based feed.
 
-Example:
+Backend is currently only a Clean Architecture scaffold (no logic implemented yet). Frontend is functional and ready for API integration.
+
+---
+
+## Project Status
+
+- Backend: Structure only (Clean Architecture)
+- Frontend: Working UI, API-ready
+- Database: Not implemented yet
+
+---
+
+## Features (Planned)
+
+- Pet browsing with filters/search
+- JWT authentication (User/Admin)
+- Pet CRUD + image upload
+- Smart matching system
+- Location-based feed (local only)
+- Likes and comments
+- Infinite scroll feed
+
+---
+
+## Location-Based Feed
+
+No global social network.
+
+Users see posts only from:
+- Same city OR
+- Within a radius (e.g. 20 km)
+
+Example API:
 
 GET /api/posts?lat=...&lng=...&radius=20
-🧱 Tech Stack
 
-Backend (Planned)
 
-ASP.NET Core (.NET 8)
-Entity Framework Core
-SQL Server
-JWT Authentication
+---
 
-Frontend
+## Tech Stack
 
-Angular (latest)
-Reactive Forms
-HTTP Interceptors
+Backend:
+- ASP.NET Core (.NET 8)
+- Entity Framework Core
+- SQL Server
+- JWT Auth
 
-Architecture
+Frontend:
+- Angular
+- Reactive Forms
+- HTTP Interceptors
 
-Clean Architecture (Domain, Application, Infrastructure, API)
-📂 Project Structure
+Architecture:
+- Clean Architecture (Domain, Application, Infrastructure, API)
+
+---
+
+## Project Structure
+
+
 find-me-a-pet/
-│
-├── backend/              # Clean Architecture structure (not implemented)
-│
+├── backend/ (scaffold only)
 ├── frontend/
-│   └── find-me-a-pet-ui/
-│
 ├── docs/
-│
 └── README.md
-⚙️ Getting Started
-Frontend
+
+
+---
+
+## Run Frontend
+
+
 cd frontend/find-me-a-pet-ui
 npm install
 ng serve
 
-Runs on:
 
+App runs on:
 http://localhost:4200
-🛠️ Backend (Planned)
 
-The backend follows a Clean Architecture design, including:
+---
 
-Controllers layer
-Services layer
-Repository layer
-DTOs
-EF Core setup
+## Backend
 
-Implementation is planned in a future version.
+Only architecture structure exists. No implementation yet.
 
-🚀 Future Work
-Full API implementation
-Database integration (SQL Server)
-Authentication system
-Matching algorithm
-Location filtering (Haversine formula)
-Deployment (Azure / Docker)
+Future work includes full API, database, authentication, and matching system.
