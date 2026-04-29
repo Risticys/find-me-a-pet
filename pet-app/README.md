@@ -1,59 +1,100 @@
-# PetApp
+🐾 Find Me a Pet – Smart Pet Matching Platform
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+## 📸 Screenshots
 
-## Development server
+### 🏠 Home Page
+![Home](docs/home.png)
 
-To start a local development server, run:
+### 📍 Pet Feed
+![Find Match](docs/find-match.png)
 
-```bash
+### 🐶 Pet Details
+![Forum](docs/forum.png)
+
+
+A full-stack web application concept for connecting users with adoptable pets, featuring a smart matching system and a location-based community feed.
+
+This repository currently contains the frontend and full backend architecture structure, but the backend logic is not implemented yet.
+
+🚀 Project Status
+
+⚠️ Important:
+
+Backend is only scaffolded (Clean Architecture structure)
+No business logic or API endpoints are fully implemented yet
+Frontend is functional (UI + basic integration-ready structure)
+🧩 Features (Planned)
+🏠 Browse pets for adoption (filter + search)
+🔐 JWT authentication (User/Admin roles)
+🐕 Pet management (CRUD + image upload)
+🧠 Smart pet matching system
+📍 Location-based pet feed (no followers, local only)
+💬 Likes and comments on posts
+📷 Instagram-style feed with infinite scroll
+📍 Location-Based Feed (Concept)
+No global feed
+No followers
+Users only see posts:
+From the same city OR
+Within a defined radius (e.g. 20 km)
+
+Example:
+
+GET /api/posts?lat=...&lng=...&radius=20
+🧱 Tech Stack
+
+Backend (Planned)
+
+ASP.NET Core (.NET 8)
+Entity Framework Core
+SQL Server
+JWT Authentication
+
+Frontend
+
+Angular (latest)
+Reactive Forms
+HTTP Interceptors
+
+Architecture
+
+Clean Architecture (Domain, Application, Infrastructure, API)
+📂 Project Structure
+find-me-a-pet/
+│
+├── backend/              # Clean Architecture structure (not implemented)
+│
+├── frontend/
+│   └── find-me-a-pet-ui/
+│
+├── docs/
+│
+└── README.md
+⚙️ Getting Started
+Frontend
+cd frontend/find-me-a-pet-ui
+npm install
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Runs on:
 
-## Code scaffolding
+http://localhost:4200
+🛠️ Backend (Planned)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+The backend follows a Clean Architecture design, including:
 
-```bash
-ng generate component component-name
-```
+Controllers layer
+Services layer
+Repository layer
+DTOs
+EF Core setup
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Implementation is planned in a future version.
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+🚀 Future Work
+Full API implementation
+Database integration (SQL Server)
+Authentication system
+Matching algorithm
+Location filtering (Haversine formula)
+Deployment (Azure / Docker)
