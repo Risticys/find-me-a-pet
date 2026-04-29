@@ -3,19 +3,19 @@
 ## Screenshots
 
 <p align="center">
-  <img src="docs/home.png" width="650"/>
+  <img src="Docs/home.png" width="650"/>
 </p>
 
 ### Home Page
 
 <p align="center">
-  <img src="docs/find-match.png" width="650"/>
+  <img src="Docs/find-match.png" width="650"/>
 </p>
 
 ### Pet Feed / Match Page
 
 <p align="center">
-  <img src="docs/forum.png" width="650"/>
+  <img src="Docs/forum.png" width="650"/>
 </p>
 
 ### Pet Details / Forum
